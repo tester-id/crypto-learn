@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details. -->
 
-# 🛡️ CryptoLearn Lab v2.0
+# 🛡️ CryptoLearn
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -71,28 +71,41 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ### 1. Clone Repository
 ```bash
-git clone [https://github.com/username-anda/cryptolearn-lab.git](https://github.com/username-anda/cryptolearn-lab.git)
-cd cryptolearn-lab
+git clone [https://github.com/tester-id/crypto-learn.git]
+cd crypto-learn
 
-2. Install Dependencies
-Bash
+---
+
+### 2. Install Dependencies
+```bash
 npm install
-3. Configure Environment Variables
-Create a .env file in the root directory and add the following:
 
-Code snippet
-DATABASE_URL="postgresql://user:password@hostname:port/neondb?sslmode=require"
+---
+
+### 3. Konfigurasi Environment Variables
+Buat file .env di direktori root dan tambahkan yang berikut ini:
+
+```bash
+DATABASE_URL="postgresql://user:password@localhost:5432/crypto_learn_db?schema=public"
 AUTH_SECRET="your-very-long-random-secret"
-4. Setup Database
-Bash
+
+---
+
+### 4. Setup Database
+```bash
 npx prisma generate
 npx prisma db push
-5. Run Development Server
-Bash
+
+---
+
+### 5. Run Development Server
+```bash
 npm run dev
 Open http://localhost:3000 in your browser.
 
-📂 Project Structure
+---
+
+## 📂 Struktur Project
 src/app: App Router logic (Pages, Layouts, Server Actions).
 
 src/components: Reusable UI components (MagicUI, Shadcn/UI).
@@ -101,17 +114,14 @@ src/lib: Encryption utilities and Prisma configuration.
 
 prisma/: Database schema and migrations.
 
-📸 Visuals
-Encryption Studio: Main dashboard for processing text with shimmer effects and mono fonts.
+---
 
-Activity Terminal: A professional scrollable log interface for tracking system activity.
-
-Adaptive UI: Grid-patterned backgrounds that react to theme changes.
-
-🤝 Contribution
+## 🤝 Contribution
 Contributions are welcome! Feel free to fork this project and submit a pull request for any feature additions or bug fixes.
 
-📄 License
+---
+
+## 📄 License
 Distributed under the MIT License. See LICENSE for more information.
 
 <p align="center"> Built with 💜 by <a href="https://www.google.com/search?q=https://github.com/your-username">Your Name</a> </p>
