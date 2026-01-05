@@ -1,0 +1,30 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "library"
+}
+
+datasource db {
+  provider = "postgresql"
+  // Tambahkan baris di bawah ini
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  username  String    @unique
+  email     String    @unique
+  password  String    
+  createdAt DateTime  @default(now())
+  history   History[]
+}
+
+model History {
+  id        String   @id @default(cuid())
+  userId    String
+  method    String
+  type      String
+  input     String   @db.Text
+  output    String   @db.Text
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
