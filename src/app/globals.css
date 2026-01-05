@@ -128,51 +128,58 @@
     --sidebar-ring: #0184bc;
   }
 
-  /* --- DARK MODE: ROSE PINE MOON --- */
+  /* --- DARK MODE: OPTIMIZED ROSE PINE MOON --- */
   .dark {
-    --background: #232136; /* Base */
-    --foreground: #e0def4; /* Text */
+    /* 1. Background & Surface: Menggunakan kedalaman visual (Elevation) */
+    --background: #232136; /* Base: Lapisan terbawah */
+    --foreground: #e0def4; /* Text: Putih lembut agar tidak menyilaukan */
 
-    --card: #2a273f; /* Surface */
+    /* Card & Popover dibuat sedikit lebih terang dari background untuk kesan "terangkat" */
+    --card: #2a273f;       /* Surface: Lapisan di atas base */
     --card-foreground: #e0def4;
 
-    --popover: #2a273f; /* Surface */
+    --popover: #2a273f;
     --popover-foreground: #e0def4;
 
-    --primary: #c4a7e7; /* Iris (Purple/Lavender) */
+    /* 2. Primary: Warna Iris (Lavender) yang menenangkan namun tetap fungsional */
+    --primary: #c4a7e7; 
     --primary-foreground: #232136;
 
-    --secondary: #393552; /* Overlay */
-    --secondary-foreground: #e0def4;
+    /* 3. Secondary & Muted: Menurunkan kontras untuk elemen dekoratif/tidak penting */
+    --secondary: #393552; 
+    --secondary-foreground: #908caa; /* Teks sekunder yang lebih redup */
 
-    --muted: #393552; /* Overlay */
-    --muted-foreground: #908caa; /* Subtle */
+    --muted: #2d2a45;      /* Lebih gelap dari card untuk area input/log inactive */
+    --muted-foreground: #6e6a86; /* Kontras rendah untuk label yang kurang penting */
 
-    --accent: #44415a; /* Highlight High */
-    --accent-foreground: #e0def4;
+    /* 4. Accent: Highlight untuk elemen interaktif saat hover */
+    --accent: #44415a; 
+    --accent-foreground: #c4a7e7;
 
-    --destructive: #eb6f92; /* Love (Red) */
+    /* 5. Destructive: Menggunakan warna "Love" Rose Pine */
+    --destructive: #eb6f92;
     --destructive-foreground: #e0def4;
 
-    --border: #44415a; /* Highlight Med */
-    --input: #44415a;
-    --ring: #c4a7e7;
+    /* 6. Border & Input: UX fokus pada kehalusan garis */
+    --border: #393552;     /* Overlay: Garis yang halus agar tidak mengganggu fokus */
+    --input: #393552;
+    --ring: rgba(196, 167, 231, 0.5); /* Primary dengan alpha agar glow terasa natural */
 
-    /* Chart Colors (Based on Rose Pine Palette) */
+    /* Chart Colors: Berdasarkan palet Rose Pine yang harmoni */
     --chart-1: #c4a7e7; /* Iris */
     --chart-2: #3e8fb0; /* Pine */
     --chart-3: #f6c177; /* Gold */
     --chart-4: #eb6f92; /* Love */
     --chart-5: #9ccfd8; /* Foam */
 
-    /* Sidebar Dark */
-    --sidebar: #232136;
-    --sidebar-foreground: #e0def4;
+    /* Sidebar Dark: Konsisten dengan elevasi background */
+    --sidebar: #1f1d2e;    /* Sedikit lebih gelap dari background utama untuk fokus konten */
+    --sidebar-foreground: #908caa;
     --sidebar-primary: #c4a7e7;
     --sidebar-primary-foreground: #232136;
     --sidebar-accent: #2a273f;
     --sidebar-accent-foreground: #e0def4;
-    --sidebar-border: #44415a;
+    --sidebar-border: #2d2a45;
     --sidebar-ring: #c4a7e7;
   }
 }
@@ -185,5 +192,13 @@
   .bg-grid-small-white {
     background-size: 20px 20px;
     background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+  }
+  /* Menyembunyikan scrollbar tapi tetap bisa di-scroll */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
