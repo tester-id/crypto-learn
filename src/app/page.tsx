@@ -101,7 +101,7 @@ export default function Home() {
                             
                             <Link href="/login" className="w-full md:w-auto group">
                                 <button className="w-full md:w-64 h-14 px-8 rounded-full border border-border/60 bg-background/50 backdrop-blur-sm hover:bg-muted transition-all font-bold flex items-center justify-center gap-2">
-                                    Member Login
+                                    Login
                                     <Fingerprint className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
                                 </button>
                             </Link>

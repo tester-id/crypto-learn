@@ -61,7 +61,7 @@ export function CryptoPlayground({ defaultMode }: { defaultMode: "encrypt" | "de
         input: input,
         output: output
       });
-      if (result.success) toast.success("History archived successfully!");
+      if (result.success) toast.success("History saved successfully!");
       else toast.error(result.message || "Failed to save history.");
     } catch (error) {
       toast.error("A connection error occurred");
@@ -182,7 +182,7 @@ export function CryptoPlayground({ defaultMode }: { defaultMode: "encrypt" | "de
                 >
                   <div className="absolute inset-0 w-full h-full animate-shimmer bg-[linear-gradient(110deg,transparent,25%,rgba(255,255,255,0.1),50%,transparent,75%,transparent)] bg-[length:200%_100%] opacity-50" />
                   <Save className="w-5 h-5 mr-2 relative z-10" />
-                  <span className="relative z-10">{isSaving ? "Syncing..." : "Archive Log"}</span>
+                  <span className="relative z-10">{isSaving ? "Syncing..." : "Save Log"}</span>
                 </Button>
               </CardContent>
             </Card>

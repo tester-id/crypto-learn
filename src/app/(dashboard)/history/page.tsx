@@ -28,7 +28,7 @@ export default async function HistoryPage() {
               <Database className="w-6 h-6 text-primary" />
             </div>
             <h1 className="text-4xl font-black tracking-tighter uppercase italic">
-              Data <span className="text-primary">Archives</span>
+              Data <span className="text-primary">Saved</span>
             </h1>
           </div>
           <p className="text-muted-foreground font-medium text-sm md:text-base max-w-md">
