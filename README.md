@@ -72,7 +72,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ### 1. Clone Repository
 ```bash
 git clone [https://github.com/tester-id/crypto-learn.git]
-cd crypto-learn
+cd crypto-learn```
 
 ---
 
