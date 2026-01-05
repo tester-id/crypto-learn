@@ -75,14 +75,10 @@ git clone [https://github.com/tester-id/crypto-learn.git]
 cd crypto-learn
 ```
 
----
-
 ### 2. Install Dependencies
 ```bash
 npm install
 ```
-
----
 
 ### 3. Konfigurasi Environment Variables
 Buat file .env di direktori root dan tambahkan yang berikut ini:
@@ -92,15 +88,11 @@ DATABASE_URL="postgresql://user:password@localhost:5432/crypto_learn_db?schema=p
 AUTH_SECRET="your-very-long-random-secret"
 ```
 
----
-
 ### 4. Setup Database
 ```bash
 npx prisma generate
 npx prisma db push
 ```
-
----
 
 ### 5. Run Development Server
 ```bash
