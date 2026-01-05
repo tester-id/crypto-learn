@@ -71,53 +71,60 @@
 }
 
 @layer base {
-  /* --- LIGHT MODE: ONE HALF LIGHT --- */
+  /* --- LIGHT MODE: OPTIMIZED ONE HALF LIGHT --- */
   :root {
-    --radius: 0.625rem;
+    --radius: 0.75rem; /* Sedikit lebih membulat agar lebih modern */
     
-    --background: #fafafa;
-    --foreground: #383a42;
+    /* 1. Background & Surface: Memberikan kedalaman visual */
+    --background: #f9f9f9; /* Off-white untuk mengurangi kelelahan mata */
+    --foreground: #282c34; /* Lebih gelap dari sebelumnya untuk kontras teks utama */
 
+    /* 2. Card & Popover: Elevasi menggunakan warna putih murni agar "mengapung" */
     --card: #ffffff;
-    --card-foreground: #383a42;
+    --card-foreground: #282c34;
 
     --popover: #ffffff;
-    --popover-foreground: #383a42;
+    --popover-foreground: #282c34;
 
-    --primary: #0184bc; /* One Half Blue */
-    --primary-foreground: #fafafa;
+    /* 3. Primary: One Half Blue dengan saturasi yang pas untuk tombol/link */
+    --primary: #0184bc; 
+    --primary-foreground: #ffffff;
 
-    --secondary: #f0f0f0;
-    --secondary-foreground: #383a42;
+    /* 4. Secondary & Muted: Digunakan untuk area yang kurang penting (non-interactive) */
+    --secondary: #f0f1f2; 
+    --secondary-foreground: #505560;
 
-    --muted: #f0f0f0;
-    --muted-foreground: #a0a1a7;
+    --muted: #f0f1f2;
+    --muted-foreground: #6a6f7a; /* Ditingkatkan kontrasnya agar teks muted tetap terbaca */
 
-    --accent: #f0f0f0;
-    --accent-foreground: #383a42;
+    /* 5. Accent: Digunakan untuk hover state */
+    --accent: #e9eff5; 
+    --accent-foreground: #0184bc;
 
-    --destructive: #e45649; /* One Half Red */
-    --destructive-foreground: #fafafa;
+    /* 6. Destructive: Kontras tinggi untuk aksi berbahaya */
+    --destructive: #e45649;
+    --destructive-foreground: #ffffff;
 
-    --border: #e5e5e6;
-    --input: #e5e5e6;
-    --ring: #0184bc;
+    /* 7. Borders & Inputs: Lebih halus agar tidak mendominasi visual */
+    --border: #e1e2e3;
+    --input: #e1e2e3;
+    --ring: rgba(1, 132, 188, 0.4); /* Menggunakan alpha untuk fokus yang lembut */
 
-    /* Chart Colors (Based on One Half Palette) */
-    --chart-1: #0184bc; /* Blue */
-    --chart-2: #50a14f; /* Green */
-    --chart-3: #c18401; /* Yellow */
-    --chart-4: #a626a4; /* Purple */
-    --chart-5: #e45649; /* Red */
+    /* Chart Colors: Konsisten dengan hierarki One Half */
+    --chart-1: #0184bc;
+    --chart-2: #50a14f;
+    --chart-3: #c18401;
+    --chart-4: #a626a4;
+    --chart-5: #e45649;
 
-    /* Sidebar Light */
-    --sidebar: #fafafa;
+    /* Sidebar Light: UX Fokus pada navigasi */
+    --sidebar: #ffffff;
     --sidebar-foreground: #383a42;
     --sidebar-primary: #0184bc;
     --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #f0f0f0;
-    --sidebar-accent-foreground: #383a42;
-    --sidebar-border: #e5e5e6;
+    --sidebar-accent: #f5f6f7;
+    --sidebar-accent-foreground: #0184bc;
+    --sidebar-border: #eeeff0;
     --sidebar-ring: #0184bc;
   }
 
