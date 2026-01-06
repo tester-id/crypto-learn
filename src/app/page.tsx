@@ -26,9 +26,11 @@ export function AnimatedShinyBadge() {
                         'text-sm lg:text-base font-mono tracking-tighter',
                     )}
                 >
-                    <Sparkles className="mr-2 size-4 text-primary animate-pulse" />
-                    <span>Encryption Tools</span>
-                    <ArrowRightIcon className="ml-2 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                    <Sparkles className="mr-2 size-4 text-primary animate-pulse" >
+                        <span>Encryption Tools</span>
+                        <ArrowRightIcon className="ml-2 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                    </Sparkles>
+                    
                 </AnimatedShinyText>
             </div>
         </div>
