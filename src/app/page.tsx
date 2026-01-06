@@ -158,7 +158,7 @@ export default function Home() {
                             {
                                 icon: <BookOpen className="w-8 h-8 text-purple-500" />,
                                 title: "Activity Stream",
-                                desc: "Track your learning progress with a comprehensive, encrypted activity log and system history.",
+                                desc: "Securely store and review your encryption history. Track past operations, monitor progress, and revisit previous results through a structured and protected activity log.",
                                 color: "bg-purple-500/10"
                             }
                         ].map((feature, i) => (
@@ -202,7 +202,7 @@ export default function Home() {
                             rel="noopener noreferrer"
                         >
                             <Github size={18} className="mr-2" />
-                            Repository
+                            /tester-id
                         </a>
                     </div>
                 </div>
