@@ -27,7 +27,7 @@ export function AnimatedShinyBadge() {
                     )}
                 >
                     <Sparkles className="mr-2 size-4 text-primary animate-pulse" />
-                    <span>v2.0 Encryption Protocol</span>
+                    <span>Encryption Tools</span>
                     <ArrowRightIcon className="ml-2 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
                 </AnimatedShinyText>
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1]">
                                 Master the Art of <br />
                                 <FlipWords 
-                                    words={['Shift Cipher', 'Caesar Mode', 'Vigenère', 'Transposition']} 
+                                    words={['Caesar Mode', 'Vigenère', 'Transposition']} 
                                     className="text-primary"
                                 />
                                 <br />
