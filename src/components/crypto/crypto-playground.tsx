@@ -106,7 +106,7 @@ export function CryptoPlayground({ defaultMode }: { defaultMode: "encrypt" | "de
               value="ascii" 
               className="flex-1 md:flex-none px-4 md:px-8 rounded-xl font-bold data-[state=active]:bg-background data-[state=active]:text-primary data-[state=active]:shadow-lg text-xs md:text-sm whitespace-nowrap"
             >
-              Shift
+              Caesar
             </TabsTrigger>
             <TabsTrigger 
               value="vigenere" 
