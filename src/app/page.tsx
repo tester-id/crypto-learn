@@ -71,7 +71,7 @@ export default function Home() {
                             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1]">
                                 Master the Art of <br />
                                 <FlipWords 
-                                    words={['Caesar Mode', 'Vigenère', 'Transposition']} 
+                                    words={['Caesar Cipher', 'Vigenère Cipher', 'Transposition Cipher']} 
                                     className="text-primary"
                                 />
                                 <br />
